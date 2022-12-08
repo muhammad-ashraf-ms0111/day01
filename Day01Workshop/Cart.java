@@ -31,8 +31,8 @@ public class Cart {
                         System.out.println("Your cart is empty");
                     } else {
                         System.out.println("The contents of your cart");
-                        for (Integer idx = 0; idx < cart.size(); idx++)
-                            System.out.printf("%d. %s\n", idx + 1, cart.get(idx));
+                        for (Integer i = 0; i < cart.size(); i++)
+                            System.out.printf("%d. %s\n", i + 1, cart.get(i));
                     }
                     break;
 
@@ -43,6 +43,7 @@ public class Cart {
                     break;
 
                 case "delete":
+                    cart.remove(terms[1]);
                     // delete has any number and if the number is valid
                     break;
 
